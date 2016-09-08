@@ -25,12 +25,16 @@ module.exports = {
           query: {
               presets: ['es2016','react']
           }
-      }, // to transform JSX into JS
+      }, {
+          test: /\.scss?$/,
+          exclude: /node_modules/,
+          loaders: ['style','css','sass'],
+      },
     ],
   },
 
   resolve: {
     modulesDirectories: ['node_modules', 'bower_components'],
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.css', '.scss']
   },
 }

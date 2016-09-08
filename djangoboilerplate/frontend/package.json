@@ -1,0 +1,26 @@
+{
+  "name": "djangoboilerplate",
+  "version": "0.0.0",
+  "description": "React + Webpack for use with django",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "node-sass": "^3.9.3",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-bundle-tracker": "0.0.93"
+  }
+}

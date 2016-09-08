@@ -13,13 +13,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'../frontend/assets'),
 )
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-print BASE_DIR
-print STATICFILES_DIRS
 
 WEBPACK_LOADER = {
     'DEFAULT': {
         'BUNDLE_DIR_NAME': 'bundles/',
-        'STATS_FILE': os.path.join(BASE_DIR, 'frontend/webpack-stats.json'),
+        'STATS_FILE': os.path.join(BASE_DIR, '../frontend/webpack-stats.json'),
     }
 }
 
@@ -37,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'backend.example',
 ]
 
 MIDDLEWARE = [
