@@ -87,3 +87,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
+djangoboilerplate/frontend/node_modules/
