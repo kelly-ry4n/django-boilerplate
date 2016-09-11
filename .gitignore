@@ -89,6 +89,8 @@ ENV/
 .ropeproject
 djangoboilerplate/frontend/node_modules/
 djangoboilerplate/frontend/bundles/
+djangoboilerplate/frontend/assets/bundles/
+static/
 
 *.swp
 *.swo

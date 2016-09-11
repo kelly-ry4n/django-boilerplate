@@ -1,4 +1,8 @@
-$blue: blue;
+@import foundation
+@import 'assets/settings'
+@import foundation-everything
+
+$blue: red;
 body {
     background-color: $blue;
 }

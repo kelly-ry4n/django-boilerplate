@@ -11,6 +11,7 @@ DEBUG = True
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'../frontend/assets'),
+    os.path.join(BASE_DIR,'../site_static'),
 )
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
@@ -34,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'webpack_loader',
     'backend.example',
 ]
@@ -117,3 +119,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+    'PAGE_SIZE': 20
+}
